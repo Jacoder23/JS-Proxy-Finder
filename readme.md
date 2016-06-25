@@ -36,3 +36,4 @@ Output is in the form of key:value --> IP : Port.
   ...etc
 }
 ```
+Based from: [https://github.com/sdrobs/HMA-Proxy-Scraper](https://github.com/sdrobs/HMA-Proxy-Scraper)
