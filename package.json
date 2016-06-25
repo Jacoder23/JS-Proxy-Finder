@@ -1,0 +1,24 @@
+{
+  "name": "js-proxy-finder",
+  "version": "0.0.1",
+  "description": "A proxy scraper in Node.js.",
+  "main": "scraper.js",
+  "dependencies": {
+    "request": "^2.72.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "keywords": [
+    "proxy",
+    "scraper",
+    "node.js"
+  ],
+  "author": "Jacoder23",
+  "license": "MIT"
+}
