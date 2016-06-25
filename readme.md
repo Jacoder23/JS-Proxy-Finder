@@ -5,6 +5,7 @@ A proxy scraper in Node.js
 
 Installation:
 ```
+$ npm install request
 $ npm install js-proxy-finder
 ```
 
