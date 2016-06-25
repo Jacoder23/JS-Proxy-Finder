@@ -12,7 +12,7 @@ $ npm install js-proxy-finder
 
 Usage is as follows:
 ```
-var search = require('proxy-search');
+var search = require('js-proxy-finder');
 
 search.getProxies(function (err,proxies) {
     if(err)
