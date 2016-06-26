@@ -1,18 +1,18 @@
 var request = require('request');
 
-var getProxies = function (callback, pageNum, proxiesScraped) {
+var getProxies = function (callback, proxyNum, proxiesScraped) {
 
     if (!proxiesScraped) {
         proxiesScraped = {};
     }
 
-    if (!pageNum){
-        pageNum = 1;
+    if (!proxyNum){
+        proxyNum = 0;
     }
 
     var fakeNums = {};
 
-    request('https://proxy-list.org/english/index.php?p=' + pageNum, function (err, res, body) {
+    request('https://incloak.com/proxy-list/?start=' + proxyNum, function (err, res, body) {
         if (!res || res.statusCode != 200) {
             callback("Response code was not 200");
             return;
@@ -69,9 +69,9 @@ var getProxies = function (callback, pageNum, proxiesScraped) {
                 }
             }
 
-            console.log('collected ' + count + ' http proxies from page ' + pageNum);
+            console.log('collected ' + count + ' http proxies from page ' + proxyNum);
 
-            getProxies(callback, pageNum + 1, proxiesScraped)
+            getProxies(callback, proxyNum + 64, proxiesScraped)
         }
         else {
             callback(null,proxiesScraped)
