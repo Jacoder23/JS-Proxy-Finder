@@ -1,6 +1,6 @@
 {
   "name": "js-proxy-finder",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A proxy scraper in Node.js.",
   "main": "scraper.js",
   "dependencies": {
