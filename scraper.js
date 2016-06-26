@@ -7,7 +7,7 @@ var getProxies = function (callback, proxyNum, proxiesScraped) {
     }
 
     if (!proxyNum){
-        proxyNum = 0;
+        proxyNum = 1;
     }
 
     var fakeNums = {};
