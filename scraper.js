@@ -12,7 +12,7 @@ var getProxies = function (callback, proxyNum, proxiesScraped) {
 
     var fakeNums = {};
 
-    request('https://incloak.com/proxy-list/?start=' + proxyNum, function (err, res, body) {
+    request('http://proxylist.hidemyass.com/search-1292985/' + proxyNum, function (err, res, body) {
         if (!res || res.statusCode != 200) {
             callback("Response code was not 200");
             return;
@@ -71,7 +71,7 @@ var getProxies = function (callback, proxyNum, proxiesScraped) {
 
             console.log('collected ' + count + ' http proxies from page ' + proxyNum);
 
-            getProxies(callback, proxyNum + 64, proxiesScraped)
+            getProxies(callback, proxyNum + 1, proxiesScraped)
         }
         else {
             callback(null,proxiesScraped)
